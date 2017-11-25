@@ -18,7 +18,7 @@ object implicitos {
                                                   //| jpcik.fundamentos.implicitos.Ingrediente]
   
   implicit val silpancho=new PlatoTipico          //> silpancho  : jpcik.fundamentos.implicitos.PlatoTipico = jpcik.fundamentos.im
-                                                  //| plicitos$PlatoTipico@6442b0a6
+                                                  //| plicitos$PlatoTipico@1d251891
   aumentar(Ingrediente("huevo"))                  //> res0: scala.collection.mutable.ArrayBuffer[jpcik.fundamentos.implicitos.Ingr
                                                   //| ediente] = ArrayBuffer(Ingrediente(huevo))
   aumentar(Ingrediente("arroz"))                  //> res1: scala.collection.mutable.ArrayBuffer[jpcik.fundamentos.implicitos.Ingr

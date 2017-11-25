@@ -14,24 +14,23 @@ object futuros {
     println("terminó corta")
   }                                               //> operacionCorta: => Unit
   
-  operacionLarga                                  //> terminó larga
-                                                  //| res0: Int = 4
-  operacionCorta                                  //> terminó corta
+  //operacionLarga
+  //operacionCorta
   
-  val fut=Future(operacionLarga)                  //> fut  : scala.concurrent.Future[Int] = List()
-  operacionCorta                                  //> terminó corta
-  fut.onComplete { result => println(result) }
+  //val fut=Future(operacionLarga)
+  //operacionCorta
   
   
+  //fut.onComplete { result => println(result) }
+  
+  
+  Future(operacionLarga)                          //> res0: scala.concurrent.Future[Int] = List()
   Future(operacionLarga)                          //> res1: scala.concurrent.Future[Int] = List()
   Future(operacionLarga)                          //> res2: scala.concurrent.Future[Int] = List()
-  Future(operacionLarga)                          //> res3: scala.concurrent.Future[Int] = List()
   
   
   Thread.sleep(10000)                             //> terminó larga
-                                                  //| Success(4)
                                                   //| terminó larga
-                                                  //| terminó larga
-                                                  //| terminó larga-
-  
+                                                  //| terminó larga/
+ 
 }
